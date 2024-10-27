@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "LG Smart";
+    src: url("/fonts/LG Smart Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "LG Smart", "Poppins", sans-serif;
+    background: url("/nightmode.png") no-repeat center center / cover;
+
+    /* Displaying elements */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.navbar,
+.navbar * {
+    font-family: "LG Smart", sans-serif !important;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 6 / 2; /* Navbar */
+}
+.div2 {
+    grid-area: 1 / 2 / 2 / 3; /* Welcome card */
+}
+.div3 {
+    grid-area: 2 / 2 / 4 / 4; /* Workout Graph */
+}
+.div4 {
+    grid-area: 2 / 4 / 4 / 6; /* Streak Card */
+}
+.div5 {
+    grid-area: 4 / 2 / 6 / 4; /* Bottom left card (under graph) */
+}
+.div6 {
+    grid-area: 4 / 4 / 6 / 6; /* Bottom right card (under streak) */
+}
+.div7 {
+    grid-area: 2 / 3 / 4 / 5; /* Main middle for stuff like calorie counter */
+}

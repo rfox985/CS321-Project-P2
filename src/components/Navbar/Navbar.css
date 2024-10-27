@@ -1,0 +1,183 @@
+body {
+    /* Displaying elements */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10% repeat(4, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 15px;
+    padding-right: 50px;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: 1 / 1 / 6 / 2; /* Navbar */
+    height: 100%;
+    background: #11101d;
+    transition: width 0.5s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+/* Logo Content */
+.logo-content {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    width: 100px;
+    height: auto;
+}
+
+/* Navigation List */
+.nav-list {
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.nav-list li {
+    position: relative;
+    margin: 8px 0;
+}
+
+.nav-list a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    background: #1d1b31;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.sidebar.light .nav-list a:hover {
+    background: #ddd;
+}
+
+/* Links Name */
+.links-name {
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Bottom Controls Container */
+.bottom-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Sign Out Button */
+.sign-out {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Default styling for Sign Out */
+.sign-out a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 50px;
+    color: #e56969;
+    font-weight: bold;
+    transition: background 0.3s;
+    width: 100%;
+    background: transparent;
+    border-radius: 6px;
+}
+
+/* Dark mode Sign Out - No box */
+.sidebar:not(.light) .sign-out a {
+    background: transparent;
+    color: #e56969;
+}
+
+.sidebar:not(.light) .sign-out a:hover {
+    background: none;
+    color: #e56969;
+}
+
+/* Light Mode Sign Out */
+.sidebar.light .sign-out a {
+    background: #f0f0f0;
+    color: #e56969;
+}
+
+.sidebar.light .sign-out a:hover {
+    background: #ddd;
+    color: #e56969;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background: #1d1b31;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar.light .theme-toggle {
+    background: #ddd;
+    color: #11101d;
+}
+
+.theme-toggle:hover {
+    background: #333;
+}
+
+.sidebar.light .theme-toggle:hover {
+    background: #bbb;
+}
+
+/* Home Content */
+.home-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.5s;
+    width: calc(100% - 250px);
+    display: flex;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+/* Welcome Message */
+.welcome-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Light Mode Welcome Message */
+.main-container.light-mode .welcome-message {
+    color: white;
+}

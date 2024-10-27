@@ -1,0 +1,17 @@
+.graph-card {
+    grid-area: 2 / 2 / 4 / 4; /* Workout Graph */
+    width: 100%;
+    height: 100%;
+    background-color: #161526;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 2px #25325ed5;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.card-text {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
