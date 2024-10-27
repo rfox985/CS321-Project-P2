@@ -1,36 +1,25 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## You need to run the following npm install commands to run the server:
+npm install tailwind-variants cx tailwind-merge @remixicon/react
 
-First, run the development server:
+npm install -D @tailwindcss/forms
 
-```bash
+npm i recharts
+
+npm install @radix-ui/react-accordion @radix-ui/react-checkbox @radix-ui/react-dialog @radix-ui/react-dropdown-menu @radix-ui/react-hover-card @radix-ui/react-label @radix-ui/react-navigation-menu @radix-ui/react-popover @radix-ui/react-radio-group @radix-ui/react-select @radix-ui/react-slider @radix-ui/react-slot @radix-ui/react-switch @radix-ui/react-tabs @radix-ui/react-toast @radix-ui/react-tooltip @internationalized/date date-fns react-day-picker@8.10.1 recharts @react-aria/datepicker @react-stately/datepicker
+
+npm install next@^14.2.7 react@^18.3.1 react-dom@^18.3.1 bcrypt@^5.1.1 bootstrap@^5.3.3 jsonwebtoken@^9.0.2 nodemailer@^6.9.14 pg@^8.12.0 react-icons@^5.3.0 react-router-dom@^6.26.1
+
+npm install react-icons --save
+
+npm install next react react-dom
+
+
+## Then, to run the server, type the following in the terminal:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Then, to view the website:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## The part tied to P2 is the Calorie Calculator
